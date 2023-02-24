@@ -1,0 +1,103 @@
+/* turn the divs into squares of even length and give them a border */
+/* create a box with a set width and height to hold divs */
+/* make the divs scale to the set box size depending on amount */
+
+
+/* slider to adjust board size */
+.slider {
+-webkit-appearance: none;
+background-color: white;
+}
+.slider::-webkit-slider-runnable-track {
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background: lightgray;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 26px;
+    margin-top: -8px;
+    background-color: #1a1a1a;
+}
+/* main elements/styles */
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+* {
+    margin: 0;
+    background-color: rgb(230, 230, 230);
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+/* button styles */
+button {
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 15px;
+    background: rgb(36, 34, 34);
+    color: white;
+    border: 1px solid rgb(36, 34, 34);
+}
+button.active {
+    background: white;
+    color: rgb(36, 34, 34);
+}
+/* title */
+h1 {
+    margin: 50px;
+    font-size: 60px;
+}
+/* grid styles */
+#grid {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    margin: 0;
+    background-color: white;
+    box-shadow: #1a1a1a  0 3px 8px;
+    margin: 20px;
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 40px;
+    }
+    #grid {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width: 800px) {
+    h1 {
+        font-size: 50px;
+    }
+    #grid {
+        width: 350px;
+        height: 350px;
+    }
+    .container {
+        max-width: 150px;
+    }
+
+}
+@media (max-width: 1000px) {
+    #grid {
+        width: 450px;
+        height: 450px;
+    }
+}
