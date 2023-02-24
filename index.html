@@ -9,15 +9,16 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-
     <div class="body">
         <h1>ETCH-A-SKETCH</h1>
         <div id="container">
-            <button id="normalBtn">Normal</button>
-            <button id="rainbowBtn">Rainbow</button>
-            <button id="eraserBtn">Eraser</button>
+            <button id="normalBtn" class="btn active">Normal</button>
+            <button id="rainbowBtn" class="btn">Rainbow</button>
+            <button id="eraserBtn" class="btn">Eraser</button>
             <button id="clearBtn">Clear</button>
-            <div id="value" class="sizeValue">32 x 32</div>
+        </div>
+        <div id="slider">
+            <div id="gridValue" class="sizeValue">32 x 32</div>
             <input id="sizeBar" type="range" min="16" max="64" value="32" class="slider" >
         </div>
         <div id="grid">
